@@ -36,4 +36,11 @@ public class Book {
         this.price = price;
     }
 
+    public void print() {
+        System.out.print(author + ", ");
+        System.out.print(title + ", ");
+        System.out.print(pages + "p., ");
+        System.out.println(price + " Eur");
+    }
+
 }

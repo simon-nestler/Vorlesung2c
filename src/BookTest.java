@@ -21,10 +21,7 @@ public class BookTest {
     public static void printBooks(Book[] books) {
         for (int i = 0; i < books.length; i++) {
             if (books[i] != null) {
-                System.out.print(books[i].getAuthor() + ", ");
-                System.out.print(books[i].getTitle() + ", ");
-                System.out.print(books[i].getPages() + "p., ");
-                System.out.println(books[i].getPrice() + " Eur");
+                books[i].print();
             }
 
         }
