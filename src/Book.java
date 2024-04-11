@@ -3,16 +3,21 @@ public class Book {
     private String author;
     private int pages;
     private float price;
+    private static int cntBooks = 0;
 
     public Book(String title, String author, int pages) {
         this.title = title;
         this.author = author;
         this.pages = pages;
-
+        cntBooks++;
     }
 
     public Book() {
+        cntBooks++;
+    }
 
+    public static int getCntBooks() {
+        return cntBooks;
     }
 
     public String getTitle() {

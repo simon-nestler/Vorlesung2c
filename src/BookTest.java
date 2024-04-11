@@ -8,8 +8,11 @@ public class BookTest {
         books[1] = new Book("The Great Gatsby", "F. Scott Fitzgerald", 180);
         books[1].setPrice(14.99f);
 
-        BookTest.printBooks(books);
+        books[2] = new Book();
+        books[2] = null;
 
+        System.out.println("Anzahl Bücher: " + Book.getCntBooks());
+        BookTest.printBooks(books);
     }
 
     public static void printBooks(Book[] books) {
