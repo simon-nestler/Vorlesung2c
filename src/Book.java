@@ -4,6 +4,17 @@ public class Book {
     private int pages;
     private float price;
 
+    public Book(String title, String author, int pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+
+    }
+
+    public Book() {
+
+    }
+
     public String getTitle() {
         return title;
     }
