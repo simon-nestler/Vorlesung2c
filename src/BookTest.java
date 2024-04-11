@@ -20,10 +20,7 @@ public class BookTest {
 
     public static void printBooks(Book[] books) {
         for (int i = 0; i < books.length; i++) {
-            if (books[i] != null) {
-                books[i].print();
-            }
-
+            System.out.println(books[i]);
         }
     }
 }
